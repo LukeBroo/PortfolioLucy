@@ -37,17 +37,6 @@
             <p>{{ $t("experience.description2") }}</p>
             <p>{{ $t("experience.description3") }}</p>
           </div>
-
-          <!-- Portfolio Link -->
-          <div class="portfolio-link">
-            <a
-              href="https://drive.google.com/drive/folders/1_tN5zxJvpv0ecM7-2EywlMjKPgDgSXF2?usp=sharing"
-              target="_blank"
-              class="portfolio-button">
-              {{ $t("experience.portfolioLink") }}
-              <Icon name="heroicons:arrow-top-right-on-square" size="20" />
-            </a>
-          </div>
         </div>
 
         <!-- Timeline po prawej -->
@@ -60,10 +49,23 @@
               :class="{
                 'timeline-item--last': index === timelineItems.length - 1,
               }">
-              <!-- Timeline dot -->
-              <div class="timeline-dot"></div>
-
-              <!-- Timeline content -->
+              <!-- Marker z ikoną -->
+              <div class="timeline-marker" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <rect
+                    x="2"
+                    y="7"
+                    width="20"
+                    height="14"
+                    rx="2"
+                    ry="2"
+                    fill="none" />
+                  <path
+                    d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
+                    fill="none" />
+                </svg>
+              </div>
+              <!-- Treść -->
               <div class="timeline-content">
                 <div class="timeline-date">{{ item.date }}</div>
                 <h3 class="timeline-title">{{ item.title }}</h3>
@@ -73,6 +75,7 @@
             </div>
           </div>
         </div>
+        <!-- /Timeline -->
       </div>
     </div>
   </section>
@@ -84,57 +87,46 @@
   .experience-section {
     padding: 6rem 0;
     background-color: $bg-secondary;
-
     @media (max-width: 964px) {
       padding: 4rem 0;
     }
   }
-
   .experience-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
   }
-
   .experience-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6rem;
-
     @media (max-width: 964px) {
       grid-template-columns: 1fr;
       gap: 4rem;
     }
   }
-
   .experience-text {
     .experience-title {
       font-size: 2.5rem;
       color: $text-primary;
       margin-bottom: 2rem;
       font-weight: 700;
-
       @media (max-width: 768px) {
         font-size: 2rem;
       }
     }
-
     .experience-description {
-      margin-bottom: 2rem;
-
       p {
         color: $text-secondary;
         line-height: 1.8;
         margin-bottom: 1.5rem;
         font-size: 1.1rem;
-
         &:last-child {
           margin-bottom: 0;
         }
       }
     }
   }
-
   .portfolio-link {
     .portfolio-button {
       display: inline-flex;
@@ -149,7 +141,6 @@
       font-size: 1.1rem;
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(139, 95, 191, 0.3);
-
       &:hover {
         background-color: darken($accent, 10%);
         transform: translateY(-2px);
@@ -158,119 +149,138 @@
     }
   }
 
-  // Timeline Styles
-  .timeline-container {
-    position: relative;
-  }
-
+  /* Timeline Styles — wariant 3 */
   .timeline {
     position: relative;
-
-    // Główna linia timeline
     &::before {
       content: "";
       position: absolute;
-      left: 20px;
-      top: 0;
-      bottom: 40px;
+      left: 19px;
+      top: 6px;
+      bottom: 6px;
       width: 2px;
-      background: linear-gradient(to bottom, $accent, rgba(139, 95, 191, 0.3));
+      background: linear-gradient(
+        to bottom,
+        lighten($accent, 10%),
+        lighten($accent, 35%)
+      );
     }
   }
-
   .timeline-item {
     position: relative;
-    padding-left: 4rem;
-    margin-bottom: 3rem;
-
+    padding-left: 74px;
+    margin-bottom: 2.6rem;
     &--last {
       margin-bottom: 0;
     }
+  }
+  .timeline-marker {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: $accent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    border: 3px solid $bg-secondary;
+    box-shadow: 0 0 0 4px rgba(139, 95, 191, 0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 
-    // Dot na timeline
-    .timeline-dot {
-      position: absolute;
-      left: 10px;
-      top: 0;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background-color: $accent;
-      border: 4px solid $bg-secondary;
-      box-shadow: 0 0 0 4px rgba(139, 95, 191, 0.2);
-      transition: all 0.3s ease;
-    }
-
-    &:hover .timeline-dot {
-      transform: scale(1.2);
-      box-shadow: 0 0 0 8px rgba(139, 95, 191, 0.3);
+    svg {
+      width: 22px;
+      height: 22px;
+      stroke: white;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
   }
-
+  .timeline-item:hover .timeline-marker {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 6px rgba(139, 95, 191, 0.24);
+  }
   .timeline-content {
+    position: relative;
     background-color: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(139, 95, 191, 0.1);
-    transition: all 0.3s ease;
-    border-left: 4px solid $accent;
+    padding: 1.5rem;
+    border-radius: $border-radius;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+    transition: all 0.25s ease;
+
+    /* Strzałka łącząca kartę z osią */
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: -8px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 8px 8px 8px 0;
+      border-color: transparent white transparent transparent;
+    }
 
     &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(139, 95, 191, 0.2);
+      transform: translateX(4px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.09);
     }
   }
-
   .timeline-date {
     color: $accent;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.4px;
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
   }
-
   .timeline-title {
     color: $text-primary;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 0.5rem;
   }
-
   .timeline-company {
     color: $text-secondary;
     font-size: 1rem;
-    font-weight: 500;
     margin-bottom: 1rem;
-    opacity: 0.8;
+    font-weight: 500;
+    opacity: 0.9;
   }
-
   .timeline-description {
     color: $text-secondary;
     line-height: 1.6;
     font-size: 0.95rem;
   }
 
-  // Mobile adjustments
+  /* Mobile */
   @media (max-width: 964px) {
-    .timeline {
-      &::before {
-        left: 15px;
-      }
+    .timeline::before {
+      left: 16px;
     }
-
     .timeline-item {
-      padding-left: 3rem;
-
-      .timeline-dot {
-        left: 5px;
-        width: 16px;
-        height: 16px;
+      padding-left: 58px;
+      margin-bottom: 2rem;
+    }
+    .timeline-marker {
+      width: 34px;
+      height: 34px;
+      svg {
+        width: 18px;
+        height: 18px;
       }
     }
-
     .timeline-content {
-      padding: 1.5rem;
+      padding: 1.25rem;
+      &::before {
+        top: 10px;
+        left: -7px;
+        border-width: 7px 7px 7px 0;
+      }
     }
   }
 </style>
