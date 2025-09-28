@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  line-height: 1.6;
+  background-color: $bg-primary;
+  min-height: 100vh;
+  color: $text-primary;
+  color: red;
+}

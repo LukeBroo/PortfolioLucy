@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "about": "O mnie",
+    "portfolio": "Portfolio",
+    "experience": "Doświadczenie",
+    "contact": "Kontakt"
+  },
+  "about": {
+    "title": "Łucja Kowalska",
+    "subtitle": "Copywriter & Content Creator",
+    "description1": "Witam! Jestem 25-letnią studentką marketingu z pasją do eksperymentowania w branży kreatywnej. Uważam, że mam doskonałe poczucie estetyki, dzięki czemu dbam o szczegóły w swoich projektach.",
+    "description2": "Tak naprawdę staram się znaleźć piękno we wszystkim, co mnie otacza. Chętnie uczę się nowych rzeczy, dlatego nie boję się wyzwań.",
+    "description3": "Ponadto prywatnie jestem kocią mamą, co można zobaczyć na zdjęciu obok 🥰. Uwielbiam również gotować, w szczególności specjały kuchni włoskiej oraz tańczyć.",
+    "skills": [
+      "Copywriting",
+      "Graphic Design",
+      "Social Media Content",
+      "SEO Writing",
+      "Digital Marketing",
+      "Content Strategy",
+      "Brand Communications"
+    ]
+  },
+  "brand": "Lucy Portfolio"
+}

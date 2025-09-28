@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "about": "About",
+    "portfolio": "Portfolio",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "Łucja Kowalska",
+    "subtitle": "Copywriter & Content Creator",
+    "description1": "Hello! I'm a 25-year-old marketing student with a passion for experimenting in the creative industry. I believe I have an excellent sense of aesthetics, which is why I pay attention to details in my projects.",
+    "description2": "I really try to find beauty in everything that surrounds me. I love learning new things, which is why I'm not afraid of challenges.",
+    "description3": "Additionally, I'm a cat mom in my private life, which you can see in the photo next to me 🥰. I also love cooking, especially Italian cuisine specialties, and dancing.",
+    "skills": [
+      "Copywriting",
+      "Graphic Design",
+      "Social Media Content",
+      "SEO Writing",
+      "Digital Marketing",
+      "Content Strategy",
+      "Brand Communications"
+    ]
+  },
+  "brand": "Lucy Portfolio"
+}
