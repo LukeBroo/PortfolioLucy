@@ -21,5 +21,12 @@
       "Brand Communications"
     ]
   },
+  "experience": {
+    "title": "Professional experience and skills",
+    "description1": "For almost 3 years I have been working as a copywriter in a marketing agency, where I create content based on client briefs — from sales texts to image activities.",
+    "description2": "I have experience in writing blog articles with SEO considerations, and my previous texts can be found on numerous websites. I know the principles of crisis communication and how to build a message that supports brand reputation.",
+    "description3": "I feel comfortable creating simple graphics — I work mainly in Canva, but recently I've been developing my skills in Illustrator and Photoshop. I completed an 8-week training program in internet marketing as part of the Future Skills program by Google and SGH.",
+    "portfolioLink": "Check my portfolio"
+  },
   "brand": "Lucy Portfolio"
 }

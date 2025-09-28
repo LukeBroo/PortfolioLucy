@@ -6,6 +6,7 @@
   <div>
     <LucyNavbar />
     <About />
+    <Experience />
   </div>
 </template>
 

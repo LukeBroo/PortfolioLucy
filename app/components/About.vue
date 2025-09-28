@@ -154,7 +154,7 @@
     margin-bottom: 2.5rem;
 
     .skill-tag {
-      background-color: rgba(139, 95, 191, 0.1);
+      background-color: rgba(255, 255, 255, 1);
       color: $accent;
       padding: 0.5rem 1rem;
       border-radius: 25px;

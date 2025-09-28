@@ -21,5 +21,12 @@
       "Brand Communications"
     ]
   },
+  "experience": {
+    "title": "Doświadczenie zawodowe oraz umiejętności",
+    "description1": "Od prawie 3 lat pracuję jako copywriterka w agencji marketingowej, gdzie tworzę treści na podstawie briefów klientów — od tekstów sprzedażowych po działania wizerunkowe.",
+    "description2": "Mam doświadczenie w pisaniu artykułów blogowych z uwzględnieniem SEO, a moje wcześniejsze teksty można znaleźć na licznych stronach internetowych. Znam zasady komunikacji kryzysowej i wiem, jak budować przekaz, który wspiera reputację marki.",
+    "description3": "Dobrze czuję się w tworzeniu prostych grafik — pracuję głównie w Canvie, ale ostatnio rozwijam swoje umiejętności również w Illustratorze i Photoshopie. Ukończyłam 8-tygodniowy program szkoleniowy w obszarze marketingu internetowego w ramach programu Umiejętności Jutra od Google i SGH.",
+    "portfolioLink": "Zobacz moje portfolio"
+  },
   "brand": "Lucy Portfolio"
 }

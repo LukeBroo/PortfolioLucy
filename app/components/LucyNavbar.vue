@@ -42,10 +42,10 @@
           <a href="#about" class="navbar-link">{{ $t("nav.about") }}</a>
         </li>
         <li>
-          <a href="#portfolio" class="navbar-link">{{ $t("nav.portfolio") }}</a>
+          <a href="#timeline" class="navbar-link">{{ $t("nav.experience") }}</a>
         </li>
         <li>
-          <a href="#timeline" class="navbar-link">{{ $t("nav.experience") }}</a>
+          <a href="#portfolio" class="navbar-link">{{ $t("nav.portfolio") }}</a>
         </li>
         <li>
           <a href="#contact" class="navbar-link">{{ $t("nav.contact") }}</a>
@@ -85,13 +85,13 @@
             </a>
           </li>
           <li>
-            <a href="#portfolio" class="mobile-link" @click="closeMobileMenu">
-              {{ $t("nav.portfolio") }}
+            <a href="#timeline" class="mobile-link" @click="closeMobileMenu">
+              {{ $t("nav.experience") }}
             </a>
           </li>
           <li>
-            <a href="#timeline" class="mobile-link" @click="closeMobileMenu">
-              {{ $t("nav.experience") }}
+            <a href="#portfolio" class="mobile-link" @click="closeMobileMenu">
+              {{ $t("nav.portfolio") }}
             </a>
           </li>
           <li>
@@ -121,7 +121,7 @@
 <style lang="scss" scoped>
   @import "~/assets/scss/variables";
   .navbar {
-    background-color: rgba(240, 235, 255, 0.95);
+    background-color: rgba(255, 255, 255, 1);
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
