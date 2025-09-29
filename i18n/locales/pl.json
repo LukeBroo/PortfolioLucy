@@ -28,5 +28,13 @@
     "description3": "Dobrze czuję się w tworzeniu prostych grafik — pracuję głównie w Canvie, ale ostatnio rozwijam swoje umiejętności również w Illustratorze i Photoshopie. Ukończyłam 8-tygodniowy program szkoleniowy w obszarze marketingu internetowego w ramach programu Umiejętności Jutra od Google i SGH.",
     "portfolioLink": "Zobacz moje portfolio"
   },
+  "portfolio": {
+    "title": "Moje Portfolio",
+    "subtitle": "Przegląd projektów copywriterskich i graficznych, które stworzyłam dla różnych klientów i branż.",
+    "viewWork": "Zobacz prace",
+    "ctaTitle": "Podobają Ci się moje prace?",
+    "ctaDescription": "Skontaktuj się ze mną, aby omówić Twój projekt i stworzyć coś wyjątkowego razem.",
+    "ctaButton": "Rozpocznijmy współpracę"
+  },
   "brand": "Lucy Portfolio"
 }

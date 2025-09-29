@@ -7,6 +7,7 @@
     <LucyNavbar />
     <About />
     <Experience />
+    <Portfolio />
   </div>
 </template>
 

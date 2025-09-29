@@ -1,28 +1,59 @@
 <script setup>
-  // Fake timeline data dla testów
-  const timelineItems = [
-    {
-      date: "2024 - obecnie",
-      title: "Senior Copywriter",
-      company: "Agencja Marketingowa XYZ",
-      description:
-        "Tworzenie treści sprzedażowych i wizerunkowych dla klientów. Komunikacja kryzysowa i budowanie reputacji marki.",
-    },
-    {
-      date: "2023 - 2024",
-      title: "Copywriter & Graphic Designer",
-      company: "Agencja Marketingowa XYZ",
-      description:
-        "Pisanie artykułów blogowych z SEO. Rozwój umiejętności w Illustrator i Photoshop.",
-    },
-    {
-      date: "2022 - 2023",
-      title: "Junior Copywriter",
-      company: "Agencja Marketingowa XYZ",
-      description:
-        "Początki pracy w agencji. Nauka tworzenia treści na podstawie briefów klientów.",
-    },
-  ];
+  const {locale} = useI18n();
+
+  // Timeline data dla różnych języków
+  const timelineData = {
+    pl: [
+      {
+        date: "2024 - obecnie",
+        title: "Senior Copywriter",
+        company: "Agencja Marketingowa XYZ",
+        description:
+          "Tworzenie treści sprzedażowych i wizerunkowych dla klientów. Komunikacja kryzysowa i budowanie reputacji marki.",
+      },
+      {
+        date: "2023 - 2024",
+        title: "Copywriter & Graphic Designer",
+        company: "Agencja Marketingowa XYZ",
+        description:
+          "Pisanie artykułów blogowych z SEO. Rozwój umiejętności w Illustrator i Photoshop.",
+      },
+      {
+        date: "2022 - 2023",
+        title: "Junior Copywriter",
+        company: "Agencja Marketingowa XYZ",
+        description:
+          "Początki pracy w agencji. Nauka tworzenia treści na podstawie briefów klientów.",
+      },
+    ],
+    en: [
+      {
+        date: "2024 - present",
+        title: "Senior Copywriter",
+        company: "Marketing Agency XYZ",
+        description:
+          "Creating sales and image content for clients. Crisis communication and building brand reputation.",
+      },
+      {
+        date: "2023 - 2024",
+        title: "Copywriter & Graphic Designer",
+        company: "Marketing Agency XYZ",
+        description:
+          "Writing SEO blog articles. Developing skills in Illustrator and Photoshop.",
+      },
+      {
+        date: "2022 - 2023",
+        title: "Junior Copywriter",
+        company: "Marketing Agency XYZ",
+        description:
+          "Beginning work at the agency. Learning to create content based on client briefs.",
+      },
+    ],
+  };
+
+  const timelineItems = computed(() => {
+    return timelineData[locale.value] || timelineData.pl;
+  });
 </script>
 
 <template>
@@ -51,19 +82,7 @@
               }">
               <!-- Marker z ikoną -->
               <div class="timeline-marker" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <rect
-                    x="2"
-                    y="7"
-                    width="20"
-                    height="14"
-                    rx="2"
-                    ry="2"
-                    fill="none" />
-                  <path
-                    d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
-                    fill="none" />
-                </svg>
+                <Icon name="heroicons:briefcase" size="22" />
               </div>
               <!-- Treść -->
               <div class="timeline-content">
@@ -155,15 +174,11 @@
     &::before {
       content: "";
       position: absolute;
-      left: 19px;
+      left: 20px;
       top: 6px;
       bottom: 6px;
       width: 2px;
-      background: linear-gradient(
-        to bottom,
-        lighten($accent, 10%),
-        lighten($accent, 35%)
-      );
+      background: $accent;
     }
   }
   .timeline-item {
@@ -191,13 +206,9 @@
     box-shadow: 0 0 0 4px rgba(139, 95, 191, 0.18);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 
-    svg {
-      width: 22px;
-      height: 22px;
-      stroke: white;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
+    // Nuxt Icon styles
+    .icon {
+      color: white;
     }
   }
   .timeline-item:hover .timeline-marker {
