@@ -33,7 +33,11 @@
             src="/lucy.jpg"
             alt="Lucy - Copywriter & Graphic Designer"
             class="profile-img"
-            loading="lazy" />
+            loading="lazy"
+            width="400"
+            height="533"
+            sizes="(max-width: 768px) 250px, 400px"
+            quality="85" />
         </div>
 
         <!-- Opis -->
@@ -101,6 +105,8 @@
       border-radius: 20px;
       box-shadow: 0 20px 40px rgba(139, 95, 191, 0.2);
       transition: transform 0.3s ease;
+      object-fit: cover;
+      aspect-ratio: 3/4;
 
       &:hover {
         transform: translateY(-3px);
