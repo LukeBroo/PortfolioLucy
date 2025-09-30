@@ -52,7 +52,11 @@ export default defineNuxtConfig({
             "Professional copywriter and graphic designer specializing in creative content, branding, and digital marketing solutions.",
         },
       ],
-      link: [{rel: "icon", type: "image/x-icon", href: "/favicon.ico"}],
+      link: [
+        {rel: "icon", type: "image/x-icon", href: "/favicon.ico?v=2"},
+        {rel: "shortcut icon", href: "/favicon.ico?v=2"},
+        {rel: "apple-touch-icon", href: "/favicon.ico?v=2"},
+      ],
     },
   },
 

@@ -5,48 +5,48 @@
   const timelineData = {
     pl: [
       {
-        date: "2024 - obecnie",
-        title: "Senior Copywriter",
-        company: "Agencja Marketingowa XYZ",
+        date: "2023.05 – obecnie",
+        title: "Content Specialist & Copywriter",
+        company: "bRenewal",
         description:
-          "Tworzenie treści sprzedażowych i wizerunkowych dla klientów. Komunikacja kryzysowa i budowanie reputacji marki.",
+          "Tworzenie treści marketingowych i wizerunkowych, wsparcie komunikacji kryzysowej, grafiki na LinkedIn/posty na Instagram.",
       },
       {
-        date: "2023 - 2024",
-        title: "Copywriter & Graphic Designer",
-        company: "Agencja Marketingowa XYZ",
+        date: "2023.01 – 2023.03",
+        title: "Copywriter",
+        company: "Invette",
         description:
-          "Pisanie artykułów blogowych z SEO. Rozwój umiejętności w Illustrator i Photoshop.",
+          "Zdobywanie pierwszych praktycznych umiejętności – pisanie tekstów blogowych SEO i zarządzanie wizytówkami Google.",
       },
       {
-        date: "2022 - 2023",
-        title: "Junior Copywriter",
-        company: "Agencja Marketingowa XYZ",
+        date: "2022",
+        title: "Certyfikat",
+        company: "Google & SGH – Umiejętności Jutra",
         description:
-          "Początki pracy w agencji. Nauka tworzenia treści na podstawie briefów klientów.",
+          "8-tygodniowy kurs marketingu internetowego, który pozwolił rozwinąć wiedzę i kompetencje w nowoczesnym marketingu cyfrowym.",
       },
     ],
     en: [
       {
-        date: "2024 - present",
-        title: "Senior Copywriter",
-        company: "Marketing Agency XYZ",
+        date: "2023.05 – present",
+        title: "Content Specialist & Copywriter",
+        company: "bRenewal",
         description:
-          "Creating sales and image content for clients. Crisis communication and building brand reputation.",
+          "Creating marketing and image content, supporting crisis communication, graphics for LinkedIn/Instagram posts.",
       },
       {
-        date: "2023 - 2024",
-        title: "Copywriter & Graphic Designer",
-        company: "Marketing Agency XYZ",
+        date: "2023.01 – 2023.03",
+        title: "Copywriter",
+        company: "Invette",
         description:
-          "Writing SEO blog articles. Developing skills in Illustrator and Photoshop.",
+          "Gaining first practical skills – writing SEO blog articles and managing Google My Business profiles.",
       },
       {
-        date: "2022 - 2023",
-        title: "Junior Copywriter",
-        company: "Marketing Agency XYZ",
+        date: "2022",
+        title: "Certificate",
+        company: "Google & SGH – Future Skills",
         description:
-          "Beginning work at the agency. Learning to create content based on client briefs.",
+          "8-week internet marketing course that allowed developing knowledge and competencies in modern digital marketing.",
       },
     ],
   };

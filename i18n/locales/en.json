@@ -23,10 +23,18 @@
   },
   "experience": {
     "title": "Professional experience and skills",
-    "description1": "For almost 3 years I have been working as a copywriter in a marketing agency, where I create content based on client briefs — from sales texts to image activities.",
-    "description2": "I have experience in writing blog articles with SEO considerations, and my previous texts can be found on numerous websites. I know the principles of crisis communication and how to build a message that supports brand reputation.",
-    "description3": "I feel comfortable creating simple graphics — I work mainly in Canva, but recently I've been developing my skills in Illustrator and Photoshop. I completed an 8-week training program in internet marketing as part of the Future Skills program by Google and SGH.",
+    "description1": "For almost 3 years I have been working as a copywriter in a marketing agency, creating content based on client briefs — from sales texts to image activities. I also prepare graphics, mainly in Canva, and currently I'm developing my skills in Adobe Illustrator and Photoshop.",
+    "description2": "I have experience in writing SEO blog articles that can be found on numerous websites. I know the principles of crisis communication and can build messages that support brand reputation.",
+    "description3": "At the beginning of my marketing journey, I completed an 8-week training program by Google and SGH as part of the Future Skills program, which helped me better understand digital marketing strategies.",
     "portfolioLink": "Check my portfolio"
+  },
+  "portfolio": {
+    "title": "My Portfolio",
+    "subtitle": "Overview of copywriting and graphic projects I've created for various clients and industries.",
+    "viewWork": "View work",
+    "ctaTitle": "Do you like my work?",
+    "ctaDescription": "Contact me to discuss your project and create something unique together.",
+    "ctaButton": "Let's start working together"
   },
   "brand": "Lucy Portfolio"
 }

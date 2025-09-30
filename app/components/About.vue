@@ -42,7 +42,9 @@
         <!-- Opis -->
         <div class="about-text">
           <h2 class="about-title">{{ $t("about.title") }}</h2>
-          <h3 class="about-subtitle">{{ $t("about.subtitle") }}</h3>
+          <h3 class="about-subtitle">
+            <strong>{{ $t("about.subtitle") }}</strong>
+          </h3>
 
           <div class="about-description">
             <p>{{ $t("about.description1") }}</p>
@@ -162,7 +164,7 @@
       font-weight: 500;
       border: 1px solid rgba(139, 95, 191, 0.2);
       transition: all 0.3s ease;
-      cursor: pointer;
+      cursor: crosshair;
 
       &:hover {
         background-color: $accent;

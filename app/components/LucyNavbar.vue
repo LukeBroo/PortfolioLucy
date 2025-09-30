@@ -42,7 +42,9 @@
           <a href="#about" class="navbar-link">{{ $t("nav.about") }}</a>
         </li>
         <li>
-          <a href="#timeline" class="navbar-link">{{ $t("nav.experience") }}</a>
+          <a href="#experience" class="navbar-link">{{
+            $t("nav.experience")
+          }}</a>
         </li>
         <li>
           <a href="#portfolio" class="navbar-link">{{ $t("nav.portfolio") }}</a>
@@ -85,7 +87,7 @@
             </a>
           </li>
           <li>
-            <a href="#timeline" class="mobile-link" @click="closeMobileMenu">
+            <a href="#experience" class="mobile-link" @click="closeMobileMenu">
               {{ $t("nav.experience") }}
             </a>
           </li>

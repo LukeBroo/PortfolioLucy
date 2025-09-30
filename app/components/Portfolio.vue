@@ -11,62 +11,58 @@
           "Artykuły blogowe z SEO, treści edukacyjne i branżowe dopasowane do grup docelowych.",
         icon: "heroicons:document-text",
         image: "/images/portfolio/blog-preview.jpg",
-        link: "https://drive.google.com/drive/folders/blog-texts-id",
+        link: "https://drive.google.com/drive/folders/1_pLWXj6vaTwnT4eQPgoxWxmvpIsR89df",
         tags: ["SEO", "Content Marketing", "Blog Writing"],
       },
       {
-        id: "presell-pages",
-        title: "Presell Pages - PRECLE",
-        description:
-          "Strony przedsprzedażowe przekonujące klientów do zakupu. Copywriting sprzedażowy.",
-        icon: "heroicons:megaphone",
-        image: "/images/portfolio/presell-preview.jpg",
-        link: "https://drive.google.com/drive/folders/presell-pages-id",
-        tags: ["Sales Copy", "Conversion", "Landing Pages"],
-      },
-      {
         id: "google-business",
-        title: "Google Wizytówki",
+        title: "Google Moja Firma",
         description:
-          "Optymalizacja profili biznesowych Google. Treści zwiększające widoczność lokalną.",
+          "Wpisy na Profilu Firmy Google, zwiększające zasięg lokalny i widoczność w wyszukiwarkach.",
         icon: "heroicons:map-pin",
         image: "/images/portfolio/google-business-preview.jpg",
-        link: "https://drive.google.com/drive/folders/google-business-id",
+        link: "https://drive.google.com/drive/folders/12X4q_lNzZLUxdb9sR8PX8AxWxI-Q5TW9",
         tags: ["Local SEO", "Google Business", "Local Marketing"],
+      },
+      {
+        id: "presell-pages",
+        title: "Presell Pages",
+        description:
+          "Treści wspierające działania SEO poprzez budowę wartościowego zaplecza linkowego.",
+        icon: "heroicons:megaphone",
+        image: "/images/portfolio/presell-preview.jpg",
+        link: "https://drive.google.com/drive/folders/1KJWzIeufb_QifhSHOjWS-viA3f_aXj53",
+        tags: ["SEO", "Link Building", "Content Strategy"],
       },
       {
         id: "canva-designs",
         title: "Canva",
-        description:
-          "Grafiki do social media, posty, stories, banery reklamowe i materiały marketingowe.",
+        description: "Grafiki do social media i materiały marketingowe.",
         icon: "heroicons:photo",
         image: "/images/portfolio/canva-preview.jpg",
-        link: "https://drive.google.com/drive/folders/canva-designs-id",
+        link: "https://drive.google.com/drive/folders/1TNj5k637mTgjQ6VwdRsDxh8E8s2wiLsV",
         tags: ["Social Media", "Marketing Graphics", "Canva Design"],
       },
       {
         id: "photoshop-works",
         title: "Adobe Photoshop",
-        description:
-          "Zaawansowana obróbka zdjęć, kompozycje graficzne i projekty wizualne.",
+        description: "Obróbka zdjęć, kompozycje graficzne i projekty wizualne.",
         icon: "heroicons:camera",
         image: "/images/portfolio/photoshop-preview.jpg",
-        link: "https://drive.google.com/drive/folders/photoshop-works-id",
+        link: "https://drive.google.com/drive/folders/1RKKd-yCaESVpGk3A4qfuZnU8HEFQSvh1",
         tags: ["Photo Editing", "Digital Art", "Photoshop"],
       },
       {
         id: "illustrator-projects",
         title: "Adobe Illustrator",
-        description:
-          "Wektorowe ilustracje, logo, ikony i projekty graficzne o wysokiej jakości.",
+        description: "Wektorowe ilustracje, logo i projekty graficzne.",
         icon: "heroicons:paint-brush",
         image: "/images/portfolio/illustrator-preview.jpg",
-        link: "https://drive.google.com/drive/folders/illustrator-projects-id",
+        link: "https://drive.google.com/drive/folders/1-Bwgdw8tYCIsvPApNNTx0bdwG9ow3NXe",
         tags: ["Vector Graphics", "Logo Design", "Illustrations"],
       },
     ],
     en: [
-      // English versions...
       {
         id: "blog-texts",
         title: "Blog Texts",
@@ -74,10 +70,56 @@
           "SEO blog articles, educational and industry content tailored to target audiences.",
         icon: "heroicons:document-text",
         image: "/images/portfolio/blog-preview.jpg",
-        link: "https://drive.google.com/drive/folders/blog-texts-id",
+        link: "https://drive.google.com/drive/folders/1_pLWXj6vaTwnT4eQPgoxWxmvpIsR89df",
         tags: ["SEO", "Content Marketing", "Blog Writing"],
       },
-      // ... reszta kategorii w języku angielskim
+      {
+        id: "google-business",
+        title: "Google My Business",
+        description:
+          "Google Business Profile posts, increasing local reach and search visibility.",
+        icon: "heroicons:map-pin",
+        image: "/images/portfolio/google-business-preview.jpg",
+        link: "https://drive.google.com/drive/folders/12X4q_lNzZLUxdb9sR8PX8AxWxI-Q5TW9",
+        tags: ["Local SEO", "Google Business", "Local Marketing"],
+      },
+      {
+        id: "presell-pages",
+        title: "Presell Pages",
+        description:
+          "Content supporting SEO activities through building valuable link building resources.",
+        icon: "heroicons:megaphone",
+        image: "/images/portfolio/presell-preview.jpg",
+        link: "https://drive.google.com/drive/folders/1KJWzIeufb_QifhSHOjWS-viA3f_aXj53",
+        tags: ["SEO", "Link Building", "Content Strategy"],
+      },
+      {
+        id: "canva-designs",
+        title: "Canva",
+        description: "Social media graphics and marketing materials.",
+        icon: "heroicons:photo",
+        image: "/images/portfolio/canva-preview.jpg",
+        link: "https://drive.google.com/drive/folders/1TNj5k637mTgjQ6VwdRsDxh8E8s2wiLsV",
+        tags: ["Social Media", "Marketing Graphics", "Canva Design"],
+      },
+      {
+        id: "photoshop-works",
+        title: "Adobe Photoshop",
+        description: "Photo editing, graphic compositions and visual projects.",
+        icon: "heroicons:camera",
+        image: "/images/portfolio/photoshop-preview.jpg",
+        link: "https://drive.google.com/drive/folders/1RKKd-yCaESVpGk3A4qfuZnU8HEFQSvh1",
+        tags: ["Photo Editing", "Digital Art", "Photoshop"],
+      },
+      {
+        id: "illustrator-projects",
+        title: "Adobe Illustrator",
+        description: "Vector illustrations, logos and graphic projects.",
+        icon: "heroicons:paint-brush",
+        image: "/images/portfolio/illustrator-preview.jpg",
+        link: "https://drive.google.com/drive/folders/1-Bwgdw8tYCIsvPApNNTx0bdwG9ow3NXe",
+        tags: ["Vector Graphics", "Logo Design", "Illustrations"],
+      },
     ],
   };
 
@@ -131,15 +173,6 @@
           </div>
         </div>
       </div>
-
-      <!-- CTA Section -->
-      <div class="portfolio-cta">
-        <h3>{{ $t("portfolio.ctaTitle") }}</h3>
-        <p>{{ $t("portfolio.ctaDescription") }}</p>
-        <a href="#contact" class="cta-button">
-          {{ $t("portfolio.ctaButton") }}
-        </a>
-      </div>
     </div>
   </section>
 </template>
@@ -149,7 +182,7 @@
 
   .portfolio-section {
     padding: 6rem 0;
-    background-color: white;
+    background: linear-gradient(225deg, $bg-secondary 0%, $bg-primary 100%);
 
     @media (max-width: 964px) {
       padding: 4rem 0;
@@ -285,48 +318,6 @@
       &:hover {
         background-color: darken($accent, 10%);
         transform: translateX(2px);
-      }
-    }
-  }
-
-  .portfolio-cta {
-    text-align: center;
-    background: linear-gradient(135deg, $bg-primary, $bg-secondary);
-    padding: 3rem;
-    border-radius: 20px;
-
-    h3 {
-      font-size: 1.8rem;
-      color: $text-primary;
-      margin-bottom: 1rem;
-      font-weight: 600;
-    }
-
-    p {
-      color: $text-secondary;
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background-color: $accent;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: $border-radius;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(139, 95, 191, 0.3);
-
-      &:hover {
-        background-color: darken($accent, 10%);
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(139, 95, 191, 0.4);
       }
     }
   }
