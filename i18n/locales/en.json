@@ -32,10 +32,8 @@
   "portfolio": {
     "title": "My Portfolio",
     "subtitle": "Overview of copywriting and graphic projects I've created for various clients and industries.",
-    "viewWork": "View work",
-    "ctaTitle": "Do you like my work?",
-    "ctaDescription": "Contact me to discuss your project and create something unique together.",
-    "ctaButton": "Let's start working together"
+    "viewWork": "View all work",
+    "viewExample": "Example"
   },
   "contact": {
     "title": "Get in touch",

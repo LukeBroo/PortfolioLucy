@@ -5,9 +5,7 @@
     const tmData = $tm("about.skills");
 
     if (Array.isArray(tmData)) {
-      // Wyciągnij tekst z każdego obiektu
       const extractedSkills = tmData.map((item) => {
-        // Sprawdź różne możliwe właściwości
         if (item.static) {
           return item.static;
         } else if (item.body && item.body.static) {

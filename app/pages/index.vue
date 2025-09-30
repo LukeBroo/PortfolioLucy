@@ -1,7 +1,6 @@
 <script setup>
   const {t, locale} = useI18n();
 
-  // SEO Meta tags dynamiczne z i18n
   useSeoMeta({
     title: () => t("seo.title"),
     description: () => t("seo.description"),
@@ -13,7 +12,6 @@
     twitterCard: "summary_large_image",
   });
 
-  // Canonical link
   useHead({
     link: [
       {

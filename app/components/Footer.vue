@@ -127,7 +127,6 @@
       }
     }
 
-    // Telefon bez strzałki
     &--static {
       grid-template-columns: auto 1fr;
       cursor: default;

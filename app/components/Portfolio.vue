@@ -1,7 +1,5 @@
 <script setup>
   const {locale} = useI18n();
-
-  // Portfolio categories data
   const portfolioData = {
     pl: [
       {
@@ -10,8 +8,8 @@
         description:
           "Artykuły blogowe z SEO, treści edukacyjne i branżowe dopasowane do grup docelowych.",
         icon: "heroicons:document-text",
-        image: "/images/portfolio/blog-preview.jpg",
         link: "https://drive.google.com/drive/folders/1_pLWXj6vaTwnT4eQPgoxWxmvpIsR89df",
+        previewLink: "/preview/blog-preview.pdf",
         tags: ["SEO", "Content Marketing", "Blog Writing"],
       },
       {
@@ -20,8 +18,8 @@
         description:
           "Wpisy na Profilu Firmy Google, zwiększające zasięg lokalny i widoczność w wyszukiwarkach.",
         icon: "heroicons:map-pin",
-        image: "/images/portfolio/google-business-preview.jpg",
         link: "https://drive.google.com/drive/folders/12X4q_lNzZLUxdb9sR8PX8AxWxI-Q5TW9",
+        previewLink: "/preview/googlepreview.png",
         tags: ["Local SEO", "Google Business", "Local Marketing"],
       },
       {
@@ -30,8 +28,8 @@
         description:
           "Treści wspierające działania SEO poprzez budowę wartościowego zaplecza linkowego.",
         icon: "heroicons:megaphone",
-        image: "/images/portfolio/presell-preview.jpg",
         link: "https://drive.google.com/drive/folders/1KJWzIeufb_QifhSHOjWS-viA3f_aXj53",
+        previewLink: "/preview/Precle.png",
         tags: ["SEO", "Link Building", "Content Strategy"],
       },
       {
@@ -39,8 +37,8 @@
         title: "Canva",
         description: "Grafiki do social media i materiały marketingowe.",
         icon: "heroicons:photo",
-        image: "/images/portfolio/canva-preview.jpg",
         link: "https://drive.google.com/drive/folders/1TNj5k637mTgjQ6VwdRsDxh8E8s2wiLsV",
+        previewLink: "/preview/0kolacjazaproszenie.png",
         tags: ["Social Media", "Marketing Graphics", "Canva Design"],
       },
       {
@@ -48,8 +46,8 @@
         title: "Adobe Photoshop",
         description: "Obróbka zdjęć, kompozycje graficzne i projekty wizualne.",
         icon: "heroicons:camera",
-        image: "/images/portfolio/photoshop-preview.jpg",
         link: "https://drive.google.com/drive/folders/1RKKd-yCaESVpGk3A4qfuZnU8HEFQSvh1",
+        previewLink: "/preview/0truskawka.png",
         tags: ["Photo Editing", "Digital Art", "Photoshop"],
       },
       {
@@ -57,8 +55,8 @@
         title: "Adobe Illustrator",
         description: "Wektorowe ilustracje, logo i projekty graficzne.",
         icon: "heroicons:paint-brush",
-        image: "/images/portfolio/illustrator-preview.jpg",
         link: "https://drive.google.com/drive/folders/1-Bwgdw8tYCIsvPApNNTx0bdwG9ow3NXe",
+        previewLink: "/preview/plakatportfolio2-2.pdf",
         tags: ["Vector Graphics", "Logo Design", "Illustrations"],
       },
     ],
@@ -69,8 +67,8 @@
         description:
           "SEO blog articles, educational and industry content tailored to target audiences.",
         icon: "heroicons:document-text",
-        image: "/images/portfolio/blog-preview.jpg",
         link: "https://drive.google.com/drive/folders/1_pLWXj6vaTwnT4eQPgoxWxmvpIsR89df",
+        previewLink: "https://drive.google.com/file/d/EXAMPLE_FILE_ID/view",
         tags: ["SEO", "Content Marketing", "Blog Writing"],
       },
       {
@@ -79,8 +77,8 @@
         description:
           "Google Business Profile posts, increasing local reach and search visibility.",
         icon: "heroicons:map-pin",
-        image: "/images/portfolio/google-business-preview.jpg",
         link: "https://drive.google.com/drive/folders/12X4q_lNzZLUxdb9sR8PX8AxWxI-Q5TW9",
+        previewLink: "https://drive.google.com/file/d/EXAMPLE_FILE_ID/view",
         tags: ["Local SEO", "Google Business", "Local Marketing"],
       },
       {
@@ -89,8 +87,8 @@
         description:
           "Content supporting SEO activities through building valuable link building resources.",
         icon: "heroicons:megaphone",
-        image: "/images/portfolio/presell-preview.jpg",
         link: "https://drive.google.com/drive/folders/1KJWzIeufb_QifhSHOjWS-viA3f_aXj53",
+        previewLink: "https://drive.google.com/file/d/EXAMPLE_FILE_ID/view",
         tags: ["SEO", "Link Building", "Content Strategy"],
       },
       {
@@ -98,8 +96,8 @@
         title: "Canva",
         description: "Social media graphics and marketing materials.",
         icon: "heroicons:photo",
-        image: "/images/portfolio/canva-preview.jpg",
         link: "https://drive.google.com/drive/folders/1TNj5k637mTgjQ6VwdRsDxh8E8s2wiLsV",
+        previewLink: "https://drive.google.com/file/d/EXAMPLE_FILE_ID/view",
         tags: ["Social Media", "Marketing Graphics", "Canva Design"],
       },
       {
@@ -107,8 +105,8 @@
         title: "Adobe Photoshop",
         description: "Photo editing, graphic compositions and visual projects.",
         icon: "heroicons:camera",
-        image: "/images/portfolio/photoshop-preview.jpg",
         link: "https://drive.google.com/drive/folders/1RKKd-yCaESVpGk3A4qfuZnU8HEFQSvh1",
+        previewLink: "https://drive.google.com/file/d/EXAMPLE_FILE_ID/view",
         tags: ["Photo Editing", "Digital Art", "Photoshop"],
       },
       {
@@ -116,18 +114,16 @@
         title: "Adobe Illustrator",
         description: "Vector illustrations, logos and graphic projects.",
         icon: "heroicons:paint-brush",
-        image: "/images/portfolio/illustrator-preview.jpg",
         link: "https://drive.google.com/drive/folders/1-Bwgdw8tYCIsvPApNNTx0bdwG9ow3NXe",
+        previewLink: "https://drive.google.com/file/d/EXAMPLE_FILE_ID/view",
         tags: ["Vector Graphics", "Logo Design", "Illustrations"],
       },
     ],
   };
-
   const portfolioItems = computed(() => {
     return portfolioData[locale.value] || portfolioData.pl;
   });
 </script>
-
 <template>
   <section id="portfolio" class="portfolio-section">
     <div class="portfolio-container">
@@ -136,7 +132,6 @@
         <h2 class="portfolio-title">{{ $t("portfolio.title") }}</h2>
         <p class="portfolio-subtitle">{{ $t("portfolio.subtitle") }}</p>
       </div>
-
       <!-- Portfolio Grid -->
       <div class="portfolio-grid">
         <div
@@ -148,7 +143,6 @@
             <div class="card-icon">
               <Icon :name="item.icon" size="32" />
             </div>
-            <!-- <img v-if="item.image" :src="item.image" :alt="item.title" class="card-image" /> -->
           </div>
 
           <!-- Card Content -->
@@ -164,9 +158,22 @@
             </div>
           </div>
 
-          <!-- Card Footer -->
+          <!-- Card Footer - Dwa przyciski -->
           <div class="card-footer">
-            <a :href="item.link" target="_blank" class="view-button">
+            <a
+              :href="item.previewLink"
+              target="_blank"
+              rel="noopener"
+              class="preview-button">
+              <Icon name="heroicons:eye" size="16" />
+              {{ $t("portfolio.viewExample") }}
+            </a>
+
+            <a
+              :href="item.link"
+              target="_blank"
+              rel="noopener"
+              class="view-all-button">
               {{ $t("portfolio.viewWork") }}
               <Icon name="heroicons:arrow-top-right-on-square" size="16" />
             </a>
@@ -176,14 +183,12 @@
     </div>
   </section>
 </template>
-
 <style lang="scss" scoped>
   @import "~/assets/scss/variables";
 
   .portfolio-section {
     padding: 6rem 0;
     background: linear-gradient(0deg, $bg-primary 0%, $bg-secondary 100%);
-
     @media (max-width: 964px) {
       padding: 4rem 0;
     }
@@ -238,6 +243,8 @@
     box-shadow: 0 10px 40px rgba(139, 95, 191, 0.1);
     transition: all 0.3s ease;
     border: 1px solid rgba(139, 95, 191, 0.08);
+    display: flex;
+    flex-direction: column;
 
     &:hover {
       transform: translateY(-8px);
@@ -259,17 +266,11 @@
       color: white;
       margin-bottom: 1rem;
     }
-
-    .card-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
   }
 
   .card-content {
     margin-bottom: 1.5rem;
+    flex-grow: 1;
 
     .card-title {
       font-size: 1.4rem;
@@ -302,23 +303,48 @@
   }
 
   .card-footer {
-    .view-button {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .preview-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    color: $accent;
+    border: 2px solid $accent;
+    padding: 0.4rem 0.8rem;
+    border-radius: $border-radius;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+
+    &:hover {
       background-color: $accent;
       color: white;
-      padding: 0.8rem 1.5rem;
-      border-radius: $border-radius;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 0.95rem;
-      transition: all 0.3s ease;
+      transform: translateY(-2px);
+    }
+  }
 
-      &:hover {
-        background-color: darken($accent, 10%);
-        transform: translateX(2px);
-      }
+  .view-all-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: $accent;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: $border-radius;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+
+    &:hover {
+      background-color: darken($accent, 10%);
     }
   }
 </style>

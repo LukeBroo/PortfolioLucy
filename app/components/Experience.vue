@@ -1,10 +1,7 @@
 <script setup>
   const {locale} = useI18n();
 
-  // Link do certyfikatu (umieść PDF w /public/certificates/)
   const certificateLink = "/certificates/certificate_lucy.pdf";
-
-  // Timeline data dla różnych języków
   const timelineData = {
     pl: [
       {
@@ -252,7 +249,6 @@
     }
   }
 
-  // Ikonka oka dla certyfikatu
   .certificate-view {
     position: absolute;
     top: 1rem;

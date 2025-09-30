@@ -2,7 +2,6 @@
   const {locales, setLocale} = useI18n();
   const isMobileMenuOpen = ref(false);
 
-  // Link do CV (umieść plik w /public/cv/)
   const cvLink = "/cv/Łucja_Kowalska_CV_marketing.pdf";
 
   const toggleMobileMenu = () => {
@@ -236,7 +235,6 @@
     }
   }
 
-  // CV Button Desktop
   .cv-button {
     display: inline-flex;
     align-items: center;
@@ -256,7 +254,6 @@
     }
   }
 
-  // Mobile styles
   .mobile-menu-toggle {
     display: none;
     background: none;
@@ -361,7 +358,6 @@
     }
   }
 
-  // Mobile CV Button
   .mobile-cv-button {
     display: flex;
     align-items: center;
