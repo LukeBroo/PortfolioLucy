@@ -99,6 +99,7 @@
       width: 100%;
       max-width: 400px;
       height: auto;
+      border: 10px solid white;
       border-radius: 20px;
       box-shadow: 0 20px 40px rgba(139, 95, 191, 0.2);
       transition: transform 0.3s ease;

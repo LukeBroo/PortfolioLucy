@@ -182,7 +182,7 @@
 
   .portfolio-section {
     padding: 6rem 0;
-    background: linear-gradient(225deg, $bg-secondary 0%, $bg-primary 100%);
+    background: linear-gradient(0deg, $bg-primary 0%, $bg-secondary 100%);
 
     @media (max-width: 964px) {
       padding: 4rem 0;
