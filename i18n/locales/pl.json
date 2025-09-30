@@ -36,5 +36,10 @@
     "ctaDescription": "Skontaktuj się ze mną, aby omówić Twój projekt i stworzyć coś wyjątkowego razem.",
     "ctaButton": "Rozpocznijmy współpracę"
   },
+  "contact": {
+    "title": "Informacje kontaktowe",
+    "subtitle": "Masz pytania lub chcesz rozpocząć współpracę? Napisz lub zadzwoń!",
+    "cta": "Chętnie odpowiem na wszystkie pytania i omówię szczegóły potencjalnej współpracy. Czekam na wiadomość od Ciebie!"
+  },
   "brand": "Lucy Portfolio"
 }

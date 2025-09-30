@@ -36,5 +36,10 @@
     "ctaDescription": "Contact me to discuss your project and create something unique together.",
     "ctaButton": "Let's start working together"
   },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Have questions or want to start working together? Write or call!",
+    "cta": "I'm happy to answer all your questions and discuss the details of potential cooperation. Looking forward to hearing from you!"
+  },
   "brand": "Lucy Portfolio"
 }

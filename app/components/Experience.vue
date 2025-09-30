@@ -7,14 +7,14 @@
       {
         date: "2023.05 – obecnie",
         title: "Content Specialist & Copywriter",
-        company: "bRenewal",
+        company: "Agencja Marketingowa bRenewal",
         description:
           "Tworzenie treści marketingowych i wizerunkowych, wsparcie komunikacji kryzysowej, grafiki na LinkedIn/posty na Instagram.",
       },
       {
         date: "2023.01 – 2023.03",
         title: "Copywriter",
-        company: "Invette",
+        company: "Agencja Marketingowa Invette",
         description:
           "Zdobywanie pierwszych praktycznych umiejętności – pisanie tekstów blogowych SEO i zarządzanie wizytówkami Google.",
       },
@@ -30,14 +30,14 @@
       {
         date: "2023.05 – present",
         title: "Content Specialist & Copywriter",
-        company: "bRenewal",
+        company: "Marketing Agency bRenewal",
         description:
           "Creating marketing and image content, supporting crisis communication, graphics for LinkedIn/Instagram posts.",
       },
       {
         date: "2023.01 – 2023.03",
         title: "Copywriter",
-        company: "Invette",
+        company: "Marketing Agency Invette",
         description:
           "Gaining first practical skills – writing SEO blog articles and managing Google My Business profiles.",
       },
@@ -105,7 +105,7 @@
 
   .experience-section {
     padding: 6rem 0;
-    background-color: $bg-secondary;
+    background: linear-gradient(0deg, $bg-primary 0%, $bg-secondary 100%);
     @media (max-width: 964px) {
       padding: 4rem 0;
     }

@@ -18,7 +18,6 @@
         return item;
       });
 
-      console.log("Extracted skills:", extractedSkills);
       return extractedSkills;
     }
 
@@ -69,7 +68,7 @@
 
   .about-section {
     padding: 6rem 0;
-    background: linear-gradient(135deg, $bg-primary 0%, $bg-secondary 100%);
+    background: linear-gradient(0deg, $bg-primary 0%, $bg-secondary 100%);
 
     @media (max-width: 964px) {
       padding: 3rem 0;
@@ -116,6 +115,7 @@
 
   .about-text {
     .about-title {
+      letter-spacing: 4px;
       font-size: 2.5rem;
       color: $text-primary;
       margin-bottom: 0.5rem;
@@ -131,6 +131,7 @@
       color: $accent;
       margin-bottom: 2rem;
       font-weight: 500;
+      letter-spacing: 3px;
     }
 
     .about-description {

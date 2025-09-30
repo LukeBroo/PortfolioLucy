@@ -1,6 +1,4 @@
-<script>
-  console.log("index.vue");
-</script>
+<script></script>
 
 <template>
   <div>
@@ -8,6 +6,7 @@
     <About />
     <Experience />
     <Portfolio />
+    <Footer />
   </div>
 </template>
 
