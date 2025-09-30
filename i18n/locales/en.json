@@ -42,5 +42,10 @@
     "subtitle": "Have questions or want to start working together? Write or call!",
     "cta": "I'm happy to answer all your questions and discuss the details of potential cooperation. Looking forward to hearing from you!"
   },
-  "brand": "Lucy Portfolio"
+  "brand": "Lucy Portfolio",
+  "seo": {
+    "title": "Łucja Kowalska - Copywriter & Graphic Designer",
+    "description": "Professional copywriter and graphic designer with 3 years of experience in marketing agency. Specializing in SEO, content marketing and graphic design.",
+    "keywords": "copywriter, graphic designer, SEO, content marketing, Łucja Kowalska"
+  }
 }

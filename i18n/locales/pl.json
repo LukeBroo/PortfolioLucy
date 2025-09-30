@@ -43,5 +43,10 @@
     "subtitle": "Masz pytania lub chcesz rozpocząć współpracę? Napisz lub zadzwoń!",
     "cta": "Chętnie odpowiem na wszystkie pytania i omówię szczegóły potencjalnej współpracy. Czekam na wiadomość od Ciebie!"
   },
-  "brand": "Lucy Portfolio"
+  "brand": "Lucy Portfolio",
+  "seo": {
+    "title": "Łucja Kowalska - Copywriter & Graphic Designer",
+    "description": "Profesjonalna copywriterka i graficzka z 3-letnim doświadczeniem w agencji marketingowej. Specjalizuję się w SEO, content marketingu i projektowaniu graficznym.",
+    "keywords": "copywriter, copywriterka, graphic designer, grafik, SEO, content marketing, Łucja Kowalska"
+  }
 }

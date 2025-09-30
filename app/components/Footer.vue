@@ -104,7 +104,7 @@
     align-items: center;
     gap: 1.5rem;
     background: white;
-    padding: 1.2rem;
+    padding: 1rem;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(139, 95, 191, 0.1);
     transition: all 0.3s ease;
