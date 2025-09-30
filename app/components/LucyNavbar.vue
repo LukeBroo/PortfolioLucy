@@ -2,16 +2,17 @@
   const {locales, setLocale} = useI18n();
   const isMobileMenuOpen = ref(false);
 
+  // Link do CV (umieść plik w /public/cv/)
+  const cvLink = "/cv/Łucja_Kowalska_CV_marketing.pdf";
+
   const toggleMobileMenu = () => {
     isMobileMenuOpen.value = !isMobileMenuOpen.value;
     updateBodyOverflow();
   };
-
   const closeMobileMenu = () => {
     isMobileMenuOpen.value = false;
     updateBodyOverflow();
   };
-
   const updateBodyOverflow = () => {
     if (import.meta.client) {
       if (isMobileMenuOpen.value) {
@@ -21,8 +22,6 @@
       }
     }
   };
-
-  // Cleanup on unmount
   onBeforeUnmount(() => {
     if (import.meta.client) {
       document.body.style.overflowX = "";
@@ -53,17 +52,26 @@
           <a href="#contact" class="navbar-link">{{ $t("nav.contact") }}</a>
         </li>
       </ul>
-      <!-- Desktop - Języki po prawej -->
-      <div class="language-switcher desktop-lang">
-        <button
-          v-for="locale in locales"
-          :key="locale.code"
-          @click="setLocale(locale.code)"
-          :class="{active: locale.code === $i18n.locale}"
-          class="lang-button">
-          {{ locale.code.toUpperCase() }}
-        </button>
+      <!-- Desktop - Języki + CV po prawej -->
+      <div class="navbar-actions desktop-lang">
+        <div class="language-switcher">
+          <button
+            v-for="locale in locales"
+            :key="locale.code"
+            @click="setLocale(locale.code)"
+            :class="{active: locale.code === $i18n.locale}"
+            class="lang-button">
+            {{ locale.code.toUpperCase() }}
+          </button>
+        </div>
+
+        <!-- CV Download Button -->
+        <a :href="cvLink" download class="cv-button">
+          <Icon name="heroicons:arrow-down-tray" size="18" />
+          CV
+        </a>
       </div>
+
       <!-- Mobile - Hamburger Menu -->
       <button class="mobile-menu-toggle" @click="toggleMobileMenu">
         <Icon name="heroicons:bars-3" size="24" />
@@ -79,7 +87,6 @@
         <button class="mobile-close-btn" @click="closeMobileMenu">
           <Icon name="heroicons:x-mark" size="24" />
         </button>
-
         <ul class="mobile-menu-list">
           <li>
             <a href="#about" class="mobile-link" @click="closeMobileMenu">
@@ -102,6 +109,13 @@
             </a>
           </li>
         </ul>
+
+        <!-- Mobile CV Download -->
+        <a :href="cvLink" download class="mobile-cv-button">
+          <Icon name="heroicons:arrow-down-tray" size="20" />
+          {{ $t("nav.downloadCV") }}
+        </a>
+
         <!-- Mobile Language Switcher -->
         <div class="mobile-language-switcher">
           <button
@@ -132,7 +146,7 @@
     &-container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 2rem;
+      padding: 0 1rem;
       display: grid;
       grid-template-columns: 1fr 2fr 1fr;
       align-items: center;
@@ -187,11 +201,18 @@
         }
       }
     }
+
+    &-actions {
+      justify-self: end;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
   }
+
   .language-switcher {
-    justify-self: end;
     display: flex;
-    gap: 0.2rem;
+    gap: 0.1rem;
     .lang-button {
       background: none;
       border: none;
@@ -199,7 +220,7 @@
       text-decoration: none;
       font-weight: 500;
       transition: $transition;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 0.6rem;
       border-radius: $border-radius;
       cursor: pointer;
       font-size: 0.9rem;
@@ -214,6 +235,27 @@
       }
     }
   }
+
+  // CV Button Desktop
+  .cv-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: $accent;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: $border-radius;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+
+    &:hover {
+      background-color: darken($accent, 10%);
+    }
+  }
+
   // Mobile styles
   .mobile-menu-toggle {
     display: none;
@@ -239,7 +281,7 @@
       display: block;
     }
   }
-  // Mobile Menu Overlay
+
   .mobile-menu-overlay {
     position: fixed;
     top: 0;
@@ -276,7 +318,6 @@
       transform: translateX(0);
     }
   }
-
   .mobile-close-btn {
     position: absolute;
     top: 1rem;
@@ -288,13 +329,11 @@
     padding: 0.5rem;
     border-radius: $border-radius;
     transition: $transition;
-
     &:hover {
       background-color: rgba(139, 95, 191, 0.1);
       color: $accent;
     }
   }
-
   .mobile-menu-list {
     list-style: none;
     margin: 0;
@@ -309,7 +348,7 @@
   }
   .mobile-link {
     display: block;
-    color: $text-primary;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     font-size: 1.2rem;
@@ -321,10 +360,30 @@
       color: $accent;
     }
   }
+
+  // Mobile CV Button
+  .mobile-cv-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: $accent;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: $border-radius;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken($accent, 10%);
+    }
+  }
+
   .mobile-language-switcher {
     display: flex;
     gap: 0.5rem;
-    margin-top: auto;
     .mobile-lang-button {
       background: none;
       border: 2px solid $accent;

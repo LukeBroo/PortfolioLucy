@@ -1,6 +1,9 @@
 <script setup>
   const {locale} = useI18n();
 
+  // Link do certyfikatu (umieść PDF w /public/certificates/)
+  const certificateLink = "/certificates/certificate_lucy.pdf";
+
   // Timeline data dla różnych języków
   const timelineData = {
     pl: [
@@ -10,6 +13,7 @@
         company: "Agencja Marketingowa bRenewal",
         description:
           "Tworzenie treści marketingowych i wizerunkowych, wsparcie komunikacji kryzysowej, grafiki na LinkedIn/posty na Instagram.",
+        type: "job",
       },
       {
         date: "2023.01 – 2023.03",
@@ -17,6 +21,7 @@
         company: "Agencja Marketingowa Invette",
         description:
           "Zdobywanie pierwszych praktycznych umiejętności – pisanie tekstów blogowych SEO i zarządzanie wizytówkami Google.",
+        type: "job",
       },
       {
         date: "2022",
@@ -24,6 +29,8 @@
         company: "Google & SGH – Umiejętności Jutra",
         description:
           "8-tygodniowy kurs marketingu internetowego, który pozwolił rozwinąć wiedzę i kompetencje w nowoczesnym marketingu cyfrowym.",
+        type: "certificate",
+        certificateUrl: certificateLink,
       },
     ],
     en: [
@@ -33,6 +40,7 @@
         company: "Marketing Agency bRenewal",
         description:
           "Creating marketing and image content, supporting crisis communication, graphics for LinkedIn/Instagram posts.",
+        type: "job",
       },
       {
         date: "2023.01 – 2023.03",
@@ -40,6 +48,7 @@
         company: "Marketing Agency Invette",
         description:
           "Gaining first practical skills – writing SEO blog articles and managing Google My Business profiles.",
+        type: "job",
       },
       {
         date: "2022",
@@ -47,6 +56,8 @@
         company: "Google & SGH – Future Skills",
         description:
           "8-week internet marketing course that allowed developing knowledge and competencies in modern digital marketing.",
+        type: "certificate",
+        certificateUrl: certificateLink,
       },
     ],
   };
@@ -55,7 +66,6 @@
     return timelineData[locale.value] || timelineData.pl;
   });
 </script>
-
 <template>
   <section id="experience" class="experience-section">
     <div class="experience-container">
@@ -69,7 +79,6 @@
             <p>{{ $t("experience.description3") }}</p>
           </div>
         </div>
-
         <!-- Timeline po prawej -->
         <div class="timeline-container">
           <div class="timeline">
@@ -82,10 +91,27 @@
               }">
               <!-- Marker z ikoną -->
               <div class="timeline-marker" aria-hidden="true">
-                <Icon name="heroicons:briefcase" size="22" />
+                <Icon
+                  :name="
+                    item.type === 'certificate'
+                      ? 'heroicons:academic-cap'
+                      : 'heroicons:briefcase'
+                  "
+                  size="22" />
               </div>
               <!-- Treść -->
               <div class="timeline-content">
+                <!-- Ikonka oka dla certyfikatu -->
+                <a
+                  v-if="item.type === 'certificate' && item.certificateUrl"
+                  :href="item.certificateUrl"
+                  target="_blank"
+                  rel="noopener"
+                  class="certificate-view"
+                  :title="$t('experience.viewCertificate')">
+                  <Icon name="heroicons:document-text" size="20" />
+                </a>
+
                 <div class="timeline-date">{{ item.date }}</div>
                 <h3 class="timeline-title">{{ item.title }}</h3>
                 <div class="timeline-company">{{ item.company }}</div>
@@ -99,7 +125,6 @@
     </div>
   </section>
 </template>
-
 <style lang="scss" scoped>
   @import "~/assets/scss/variables";
 
@@ -110,11 +135,13 @@
       padding: 4rem 0;
     }
   }
+
   .experience-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
   }
+
   .experience-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -124,6 +151,7 @@
       gap: 4rem;
     }
   }
+
   .experience-text {
     .experience-title {
       font-size: 2.5rem;
@@ -146,29 +174,8 @@
       }
     }
   }
-  .portfolio-link {
-    .portfolio-button {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background-color: $accent;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: $border-radius;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(139, 95, 191, 0.3);
-      &:hover {
-        background-color: darken($accent, 10%);
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(139, 95, 191, 0.4);
-      }
-    }
-  }
 
-  /* Timeline Styles — wariant 3 */
+  /* Timeline Styles */
   .timeline {
     position: relative;
     &::before {
@@ -181,6 +188,7 @@
       background: $accent;
     }
   }
+
   .timeline-item {
     position: relative;
     padding-left: 74px;
@@ -189,6 +197,7 @@
       margin-bottom: 0;
     }
   }
+
   .timeline-marker {
     position: absolute;
     left: 0;
@@ -206,15 +215,16 @@
     box-shadow: 0 0 0 4px rgba(139, 95, 191, 0.18);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 
-    // Nuxt Icon styles
     .icon {
       color: white;
     }
   }
+
   .timeline-item:hover .timeline-marker {
     transform: scale(1.08);
     box-shadow: 0 0 0 6px rgba(139, 95, 191, 0.24);
   }
+
   .timeline-content {
     position: relative;
     background-color: white;
@@ -241,6 +251,30 @@
       box-shadow: 0 12px 32px rgba(0, 0, 0, 0.09);
     }
   }
+
+  // Ikonka oka dla certyfikatu
+  .certificate-view {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(139, 95, 191, 0.1);
+    color: $accent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+
+    &:hover {
+      background-color: $accent;
+      color: white;
+      transform: scale(1.1);
+    }
+  }
+
   .timeline-date {
     color: $accent;
     font-weight: 700;
@@ -249,12 +283,14 @@
     margin-bottom: 0.5rem;
     text-transform: uppercase;
   }
+
   .timeline-title {
     color: $text-primary;
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
   }
+
   .timeline-company {
     color: $text-secondary;
     font-size: 1rem;
@@ -262,6 +298,7 @@
     font-weight: 500;
     opacity: 0.9;
   }
+
   .timeline-description {
     color: $text-secondary;
     line-height: 1.6;
@@ -292,6 +329,12 @@
         left: -7px;
         border-width: 7px 7px 7px 0;
       }
+    }
+    .certificate-view {
+      width: 32px;
+      height: 32px;
+      top: 0.8rem;
+      right: 0.8rem;
     }
   }
 </style>

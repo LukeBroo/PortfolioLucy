@@ -3,7 +3,8 @@
     "about": "O mnie",
     "portfolio": "Portfolio",
     "experience": "Doświadczenie",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "downloadCV": "Pobierz CV"
   },
   "about": {
     "title": "Łucja Kowalska",
@@ -26,7 +27,8 @@
     "description1": "Od prawie 3 lat pracuję jako copywriterka w agencji marketingowej, tworząc treści na podstawie briefów klientów — od tekstów sprzedażowych po działania wizerunkowe. Równocześnie przygotowuję grafiki, głównie w Canvie, a obecnie rozwijam umiejętności w Adobe Illustrator i Photoshop.",
     "description2": "Mam doświadczenie w pisaniu artykułów blogowych z uwzględnieniem SEO, które można znaleźć na licznych stronach internetowych. Znam zasady komunikacji kryzysowej i potrafię budować przekaz wspierający reputację marki.",
     "description3": "Na początku mojej drogi w marketingu ukończyłam 8-tygodniowy program szkoleniowy Google i SGH w ramach programu Umiejętności Jutra, który pozwolił mi lepiej zrozumieć strategie digital marketingu.",
-    "portfolioLink": "Zobacz moje portfolio"
+    "portfolioLink": "Zobacz moje portfolio",
+    "viewCertificate": "Zobacz certyfikat"
   },
   "portfolio": {
     "title": "Moje Portfolio",
